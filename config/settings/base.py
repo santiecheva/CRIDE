@@ -30,6 +30,9 @@ ROOT_URLCONF = 'config.urls'
 # WSGI
 WSGI_APPLICATION = 'config.wsgi.application'
 
+#Users & Authentication
+AUTH_USER_MODEL = 'users.Users'
+
 # Apps
 DJANGO_APPS = [
     'django.contrib.auth',

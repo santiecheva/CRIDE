@@ -31,4 +31,9 @@ class CRideModel(models.Model):
 		get_lastet_by = 'created'
 		ordering = ['-created','-modified']
 
+
+
+
+
+
 		
