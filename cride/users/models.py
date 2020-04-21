@@ -53,6 +53,6 @@ and add some extra field
 
 	def get_short_name(self):
 		"""Return username """
-		return self.user
+		return self.username
 
 
