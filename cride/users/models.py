@@ -11,11 +11,7 @@ from django.core.validators import RegexValidator
 from cride.utils.models import CRideModel
 
 class User(CRideModel,AbstractUser):
-"""  
-Extend from Django's Abstract user models, change the username field to email 
-and add some extra field 
-"""
-
+	
 	email = models.EmailField('email address', 
 		unique=True,
 		error_message = {
@@ -25,7 +21,7 @@ and add some extra field
 
 	phone_regex = RegexValidator(
 		regex =r'\+?1?\d{9,15}$',
-		messages = "Phone number must be entered in the format: +99999999. Up to 15 digits allowed."	)
+		messages = "Phone number must be entered in the format: +99999999. Up to 15 digits allowed.")
 
 	phone_number = models.Charfield(validators=[phone_regex], max_lenght = 17, blank = True)
 
