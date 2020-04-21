@@ -9,7 +9,7 @@ class CRideModel(models.Model):
     created = models.DateTimeField(
         'created at',
         auto_now_add= True,
-        help_text = 'Date time on which the object was created',
+        help_text = 'Date time on which the object was created'
         )
 
     modified = models.DateTimeField(
@@ -21,5 +21,5 @@ class CRideModel(models.Model):
     class Meta:
         
         abstract = True
-        get_lastet_by = 'created'
+        #get_lastet_by = 'created'
         ordering = ['-created','-modified']
