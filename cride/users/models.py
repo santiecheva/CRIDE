@@ -11,10 +11,10 @@ from django.core.validators import RegexValidator
 from cride.utils.models import CRideModel
 
 class User(CRideModel,AbstractUser):
-	
+
 	email = models.EmailField('email address', 
 		unique=True,
-		error_message = {
+		error_messages = {
 		'unique':'A user with that email already exists'
 		}
 	)
