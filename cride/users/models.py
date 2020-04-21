@@ -27,7 +27,7 @@ and add some extra field
 		regex =r'\+?1?\d{9,15}$',
 		messages = "Phone number must be entered in the format: +99999999. Up to 15 digits allowed."	)
 
-	phone_number = models.Charfield(validators=[phone_regex],max_lenght = 17, blank = True)
+	phone_number = models.Charfield(validators=[phone_regex], max_lenght = 17, blank = True)
 
 	USERNAME_FIELd = 'email'
 	REQUIRED_FIELDS = ['username','first_name','last_name']
