@@ -9,7 +9,7 @@ class CRideModel(models.Model):
     created = models.DateTimeField(
         'created at',
         auto_now_add= True,
-        help_text = 'Date time on which the object was creadaa oooooooa rrr'
+        help_text = 'Date time on which the  was creadaa oooooooa rrr'
         )
 
     modified = models.DateTimeField(
