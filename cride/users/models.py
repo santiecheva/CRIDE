@@ -32,7 +32,7 @@ class User(CRideModel,AbstractUser):
 	is_client = models.BooleanField(
 		'client status',
 		default = True,
-		help_text=('Help easily distinguis users and perform queriesses  a '
+		help_text=('Help easily distinguis users and perform queriesse a '
 			'Clients are the main type of user'
 		)
 	)
